@@ -2,11 +2,12 @@ Summary:	The Chunky Loop Generator
 Summary(pl.UTF-8):	Chunky Loop Generator - generator pętli cząstkowych
 Name:		cloog-polylib
 Version:	0.16.1
-Release:	3
+Release:	4
 License:	LGPL v2.1+
 Group:		Development/Tools
 Source0:	http://www.bastoul.net/cloog/pages/download/%{name}-%{version}.tar.gz
 # Source0-md5:	ba3bef32edfe9c61d0558132da5f32f2
+Patch0:		%{name}-string.h.patch
 URL:		http://www.cloog.org/
 BuildRequires:	autoconf >= 2.13
 BuildRequires:	automake
@@ -83,6 +84,7 @@ Statyczna biblioteka opartej na PolyLib wersji Chunky Loop Generatora.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %configure

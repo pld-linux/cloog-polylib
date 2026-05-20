@@ -1,0 +1,10 @@
+--- cloog-polylib-0.16.1/cloog-core/source/union_domain.c.orig	2026-05-20 21:26:11.017476843 +0200
++++ cloog-polylib-0.16.1/cloog-core/source/union_domain.c	2026-05-20 21:26:21.209550804 +0200
+@@ -1,6 +1,7 @@
+ #include <ctype.h>
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <string.h>
+ #include "../include/cloog/cloog.h"
+
+ #define ALLOC(type) (type*)malloc(sizeof(type))
